@@ -11,17 +11,10 @@ Your goal is to create a text-based quiz game that runs in the terminal. The gam
 3. **Question Pool**: Preload the game with a minimum of 5 questions per category per difficulty level. The questions can be multiple-choice or true/false.
 4. **User Interaction**: Use a package like `prompt-sync` to interact with the user. Prompt the user to choose a category and difficulty level before starting the quiz.
 5. **Question Presentation**: Once the user has made their choices, present one question at a time and ask for their answer.
-6. **Scoring**: Keep track of the user's score. Award points based on the difficulty level of the questions (e.g., 1 point for Easy, 2 points for Medium, 3 points for Hard).
+6. **Scoring**: Keep track of the user's score.
 7. **Feedback**: After each question, inform the user whether they were correct or not and display the correct answer if they were wrong.
 8. **Game Progression**: After answering all questions in a round, display the user's total score and offer them the option to play another round or quit the game.
 9. **Data Validation**: Implement input validation to handle invalid inputs gracefully. For example, if a user types in an incorrect choice, prompt them to try again.
-
-#### Optional Features
-
-1. **Time Limit**: Add a time limit for each question to increase the challenge.
-2. **Leaderboard**: Maintain a leaderboard that tracks the top scores across games.
-3. **Randomization**: Randomize the order of questions and answer choices.
-4. **Save and Load**: Allow the user to save their progress and resume the game later.
 
 #### Technical Notes
 
