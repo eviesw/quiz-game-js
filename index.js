@@ -6,9 +6,9 @@ const categories = {
   geography: {
     easy: [
       {
-        question: "What is the capital of France?", // Question prompt
-        answers: ["Paris", "Marseilles", "Lyon", "Bordeaux"], // List of possible answers
-        correctAnswer: "Paris", // Correct answer
+        question: "What is the capital of Spain?",
+        answers: ["Barcelona", "Madrid", "Malaga", "Valencia"],
+        correctAnswer: "Madrid",
       },
       {
         question: "How many continents are there?",
@@ -18,7 +18,7 @@ const categories = {
       {
         question: "Which ocean is the largest by surface area?",
         answers: [
-          "Atlanic Ocean",
+          "Atlantic Ocean",
           "Indian Ocean",
           "Pacific Ocean",
           "Arctic Ocean",
@@ -29,6 +29,36 @@ const categories = {
         question: "What is the largest country by land area?",
         answers: ["USA", "China", "Canada", "Russia"],
         correctAnswer: "Russia",
+      },
+      {
+        question: "What is the largest desert in the world?",
+        answers: ["Sahara", "Gobi", "Arabian", "Kalahari"],
+        correctAnswer: "Sahara",
+      },
+      {
+        question: "What is the smallest continent by land area?",
+        answers: ["Europe", "Antarctica", "Australia", "South America"],
+        correctAnswer: "Australia",
+      },
+      {
+        question: "What is the most populous city in the world?",
+        answers: ["Tokyo", "New York", "Shanghai", "London"],
+        correctAnswer: "Tokyo",
+      },
+      {
+        question: "Which city is known as the 'City of Canals'?",
+        answers: ["Amsterdam", "Venice", "Bangkok", "Bruges"],
+        correctAnswer: "Venice",
+      },
+      {
+        question: "Which country is famous for the Great Wall?",
+        answers: ["Japan", "India", "China", "South Korea"],
+        correctAnswer: "China",
+      },
+      {
+        question: "What is the largest country in South America by land area?",
+        answers: ["Argentina", "Brazil", "Chile", "Peru"],
+        correctAnswer: "Brazil",
       },
     ],
     medium: [
@@ -54,6 +84,37 @@ const categories = {
         answers: ["Turkey", "Lebanon", "Italy", "Portugal"],
         correctAnswer: "Portugal",
       },
+      {
+        question: "What is the longest mountain range in the world?",
+        answers: ["Himalayas", "Andes", "Rockies", "Alps"],
+        correctAnswer: "Andes",
+      },
+      {
+        question: "Which river is the longest in Europe?",
+        answers: ["Danube", "Rhine", "Seine", "Volga"],
+        correctAnswer: "Volga",
+      },
+      {
+        question:
+          "The Great Barrier Reef is located off the coast of which country?",
+        answers: ["South Africa", "New Zealand", "Philippines", "Australia"],
+        correctAnswer: "Australia",
+      },
+      {
+        question: "Which country is known as the Land of the Rising Sun?",
+        answers: ["China", "Japan", "South Korea", "Thailand"],
+        correctAnswer: "Japan",
+      },
+      {
+        question: "Which country is home to the famous ancient city of Petra?",
+        answers: ["Jordan", "Egypt", "Saudi Arabia", "Syria"],
+        correctAnswer: "Jordan",
+      },
+      {
+        question: "What is the capital city of Canada?",
+        answers: ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+        correctAnswer: "Ottawa",
+      },
     ],
     hard: [
       {
@@ -73,7 +134,7 @@ const categories = {
       },
       {
         question: "What is the capital city of South Korea?",
-        answers: ["Seoul", "Busan", "Tokyo", "Beijing"],
+        answers: ["Busan", "Seoul", "Incheon", "Daegu"],
         correctAnswer: "Seoul",
       },
       {
@@ -85,6 +146,43 @@ const categories = {
           "Iguazu Falls",
         ],
         correctAnswer: "Angel Falls",
+      },
+      {
+        question: "What is the largest island in the Mediterranean Sea?",
+        answers: ["Crete", "Sicily", "Corsica", "Cyprus"],
+        correctAnswer: "Sicily",
+      },
+      {
+        question:
+          "Which country is the most linguistically diverse in the world?",
+        answers: ["USA", "Nigeria", "Papua New Guinea", "China"],
+        correctAnswer: "Papua New Guinea",
+      },
+      {
+        question: "How many continents does the equator pass through?",
+        answers: ["2", "3", "4", "5"],
+        correctAnswer: "3",
+      },
+      {
+        question: "Which country has the most volcanoes in the world?",
+        answers: ["Indonesia", "Japan", "United States", "Italy"],
+        correctAnswer: "Indonesia",
+      },
+      {
+        question: "The Danube River flows into which sea?",
+        answers: [
+          "Adriatic Sea",
+          "Black Sea",
+          "Baltic Sea",
+          "Mediterranean Sea",
+        ],
+        correctAnswer: "Black Sea",
+      },
+      {
+        question:
+          "Which country is the largest producer of coffee in the world?",
+        answers: ["Colombia", "Vietnam", "Brazil", "Ethiopia"],
+        correctAnswer: "Brazil",
       },
     ],
   },
@@ -115,6 +213,73 @@ const categories = {
         answers: ["Greeks", "Romans", "Egyptians", "Mayans"],
         correctAnswer: "Egyptians",
       },
+      {
+        question:
+          "Who was the famous queen of ancient Egypt known for her relationships with Julius Caesar and Mark Antony?",
+        answers: ["Nefertiti", "Cleopatra", "Hatshepsut", "Ramses"],
+        correctAnswer: "Cleopatra",
+      },
+      {
+        question: "Who was the leader of the Soviet Union during World War II?",
+        answers: [
+          "Joseph Stalin",
+          "Leon Trotsky",
+          "Vladimir Lenin",
+          "Nikita Khrushchev",
+        ],
+        correctAnswer: "Joseph Stalin",
+      },
+      {
+        question:
+          "Which famous leader is known for his 'I Have a Dream' speech?",
+        answers: [
+          "Malcolm X",
+          "Martin Luther King Jr.",
+          "Nelson Mandela",
+          "John F. Kennedy",
+        ],
+        correctAnswer: "Martin Luther King Jr.",
+      },
+      {
+        question: "What famous ship sank on its maiden voyage in 1912?",
+        answers: [
+          "The Lusitania",
+          "The Queen Mary",
+          "The Titanic",
+          "The Britannic",
+        ],
+        correctAnswer: "The Titanic",
+      },
+      {
+        question: "Who was the first President of the United States?",
+        answers: [
+          "George Washington",
+          "Thomas Jefferson",
+          "Abraham Lincoln",
+          "John Adams",
+        ],
+        correctAnswer: "George Washington",
+      },
+      {
+        question: "What ancient wonder was located in the city of Babylon?",
+        answers: [
+          "The Hanging Gardens",
+          "The Great Pyramid of Giza",
+          "The Statue of Zeus",
+          "The Colossus of Rhodes",
+        ],
+        correctAnswer: "The Hanging Gardens",
+      },
+      {
+        question: "Which empire was ruled by Julius Caesar?",
+        answers: [
+          "Ottoman Empire",
+          "Roman Empire",
+          "Byzantine Empire",
+          "Persian Empire",
+        ],
+        correctAnswer: "Roman Empire",
+      },
     ],
     medium: [
       {
@@ -123,7 +288,7 @@ const categories = {
         correctAnswer: "1861",
       },
       {
-        question: "The Cuban Missile Crisis occured during which decade?",
+        question: "The Cuban Missile Crisis occurred during which decade?",
         answers: ["1940s", "1950s", "1960s", "1970s"],
         correctAnswer: "1960s",
       },
@@ -132,6 +297,69 @@ const categories = {
           "Who was the first Emperor of China, known for the construction of the Great Wall?",
         answers: ["Qin Shi Huang", "Genghis Khan", "Sun Yat-sen", "Mao Zedong"],
         correctAnswer: "Qin Shi Huang",
+      },
+      {
+        question: "Who sent Christopher Columbus to explore the New World?",
+        answers: [
+          "Queen Elizabeth I of England",
+          "Louis XIV of France",
+          "Pope Alexander VI",
+          "King Ferdinand of Spain",
+        ],
+        correctAnswer: "King Ferdinand of Spain",
+      },
+
+      {
+        question: "What is considered the largest empire in history?",
+        answers: [
+          "The Mongol Empire",
+          "The British Empire",
+          "The Roman Empire",
+          "The Ottoman Empire",
+        ],
+        correctAnswer: "The Mongol Empire",
+      },
+
+      {
+        question: "Who was the last Tsar of Russia?",
+        answers: [
+          "Alexander III",
+          "Peter the Great",
+          "Nicholas II",
+          "Ivan the Terrible",
+        ],
+        correctAnswer: "Nicholas II",
+      },
+      {
+        question:
+          "Who is commonly referred to as the person who created the first printing press?",
+        answers: [
+          "Leonardo da Vinci",
+          "Galileo Galilei",
+          "Isaac Newton",
+          "Johannes Gutenberg",
+        ],
+        correctAnswer: "Johannes Gutenberg",
+      },
+
+      {
+        question:
+          "Modern-day Istanbul, Turkey, used to be called what when it was the capital of the Byzantine Empire?",
+        answers: ["Constantinople", "Byzantium", "Nicomedia", "Ephesus"],
+        correctAnswer: "Constantinople",
+      },
+
+      {
+        question: "Who is the king of the Olympian gods in Greek mythology?",
+        answers: ["Apollo", "Zeus", "Poseidon", "Hermes"],
+        correctAnswer: "Zeus",
+      },
+
+      {
+        question:
+          "Which ancient figure is often considered the founder of Western philosophy?",
+        answers: ["Plato", "Aristotle", "Pythagoras", "Socrates"],
+        correctAnswer: "Socrates",
       },
     ],
     hard: [
@@ -143,7 +371,7 @@ const categories = {
       },
       {
         question:
-          "What was the name of the first man-made satellite launched into space in 1957",
+          "What was the name of the first man-made satellite launched into space in 1957?",
         answers: ["Apollo 11", "Hubble", "Sputnik", "Explorer 1"],
         correctAnswer: "Sputnik",
       },
@@ -151,6 +379,53 @@ const categories = {
         question: "The Vietnam War ended in 1975 with the fall of which city?",
         answers: ["Saigon", "Hanoi", "Phnom Penh", "Vientiane"],
         correctAnswer: "Saigon",
+      },
+      {
+        question: "Who discovered penicillin?",
+        answers: [
+          "Louis Pasteur",
+          "Marie Curie",
+          "Alexander Fleming",
+          "Robert Koch",
+        ],
+        correctAnswer: "Alexander Fleming",
+      },
+      {
+        question: "Who is known as the 'Father of Medicine'?",
+        answers: ["Aristotle", "Hippocrates", "Galen", "Avicenna"],
+        correctAnswer: "Hippocrates",
+      },
+      {
+        question: "How many years did the Hundred Years' War last?",
+        answers: ["100", "116", "99", "105"],
+        correctAnswer: "116",
+      },
+      {
+        question:
+          "Leonardo da Vinci, Michelangelo, and Raphael all belong to which historical art period?",
+        answers: ["Baroque", "Romanticism", "Renaissance", "Gothic"],
+        correctAnswer: "Renaissance",
+      },
+      {
+        question: "The Incan Empire is located in which modern-day country?",
+        answers: ["Peru", "Brazil", "Argentina", "Chile"],
+        correctAnswer: "Peru",
+      },
+      {
+        question:
+          "What is the name of the disease that ravaged and killed a third of Europe’s population in the 14th century?",
+        answers: ["The Black Death", "Smallpox", "Cholera", "The Spanish Flu"],
+        correctAnswer: "The Black Death",
+      },
+      {
+        question: "Who was the first explorer to sail around the world?",
+        answers: [
+          "Christopher Columbus",
+          "Ferdinand Magellan",
+          "Vasco da Gama",
+          "Hernán Cortés",
+        ],
+        correctAnswer: "Ferdinand Magellan",
       },
     ],
   },
@@ -167,12 +442,10 @@ const categories = {
         correctAnswer: "Mars",
       },
       {
-        question: "What gas to plants primarily use for photosynthesis?",
-        answers: ["Oxygen", "Carbon Dioxide", "Nitrogren", "Hydrogen"],
+        question: "What gas do plants primarily use for photosynthesis?",
+        answers: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
         correctAnswer: "Carbon Dioxide",
       },
-    ],
-    medium: [
       {
         question:
           "The theory of evolution by natural selection was proposed by which scientist?",
@@ -186,14 +459,103 @@ const categories = {
       },
       {
         question:
+          "The concept of gravity was discovered by which famous physicist?",
+        answers: [
+          "Isaac Newton",
+          "Albert Einstein",
+          "Galileo Galilei",
+          "Niels Bohr",
+        ],
+        correctAnswer: "Isaac Newton",
+      },
+      {
+        question: "What is the biggest planet in our solar system?",
+        answers: ["Earth", "Mars", "Jupiter", "Saturn"],
+        correctAnswer: "Jupiter",
+      },
+      {
+        question: "What is the biggest animal in the world?",
+        answers: ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+        correctAnswer: "Blue Whale",
+      },
+      {
+        question: "How many states of matter are there?",
+        answers: ["3", "4", "5", "6"],
+        correctAnswer: "4",
+      },
+      {
+        question: "What is the fastest land animal in the world?",
+        answers: ["Cheetah", "Lion", "Horse", "Leopard"],
+        correctAnswer: "Cheetah",
+      },
+      {
+        question: "How many teeth does an adult human have?",
+        answers: ["28", "30", "32", "36"],
+        correctAnswer: "32",
+      },
+    ],
+    medium: [
+      {
+        question:
           "What is the term for a substance that speeds up a chemical reaction without being consumed in the process?",
         answers: ["Solvent", "Catalyst", "Reactant", "Enzyme"],
         correctAnswer: "Catalyst",
       },
       {
-        question: "What type of rock is formed from cooled magma or lava",
+        question: "What type of rock is formed from cooled magma or lava?",
         answers: ["Sedimentary", "Metamorphic", "Igneous", "Organic"],
         correctAnswer: "Igneous",
+      },
+      {
+        question: "Which famous physicist wrote A Brief History of Time?",
+        answers: [
+          "Stephen Hawking",
+          "Albert Einstein",
+          "Isaac Newton",
+          "Richard Feynman",
+        ],
+        correctAnswer: "Stephen Hawking",
+      },
+      {
+        question: "Which is the main gas that makes up the Earth's atmosphere?",
+        answers: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        correctAnswer: "Nitrogen",
+      },
+      {
+        question:
+          "Which female scientist won a Nobel Prize in 1903 for her work on radioactivity?",
+        answers: [
+          "Marie Curie",
+          "Rosalind Franklin",
+          "Ada Lovelace",
+          "Dorothy Hodgkin",
+        ],
+        correctAnswer: "Marie Curie",
+      },
+      {
+        question: "What is the hardest natural substance on Earth?",
+        answers: ["Gold", "Iron", "Diamond", "Graphite"],
+        correctAnswer: "Diamond",
+      },
+      {
+        question: "What is the largest organ in the human body?",
+        answers: ["Liver", "Heart", "Skin", "Large Intestine"],
+        correctAnswer: "Skin",
+      },
+      {
+        question: "What does a Geiger Counter measure?",
+        answers: ["Pressure", "Sound", "Radiation", "Temperature"],
+        correctAnswer: "Radiation",
+      },
+      {
+        question: "What metal is the best conductor of electricity?",
+        answers: ["Copper", "Gold", "Silver", "Aluminum"],
+        correctAnswer: "Silver",
+      },
+      {
+        question: "What is the study of fungi called?",
+        answers: ["Bacteriology", "Mycology", "Phycology", "Virology"],
+        correctAnswer: "Mycology",
       },
     ],
     hard: [
@@ -219,6 +581,43 @@ const categories = {
           "In quantum mechanics, what is the term for the smallest unit of energy in a quantum system?",
         answers: ["Photon", "Electron", "Neutron", "Quark"],
         correctAnswer: "Photon",
+      },
+      {
+        question:
+          "What is the name of the layer of the atmosphere in which weather occurs?",
+        answers: ["Stratosphere", "Troposphere", "Mesosphere", "Thermosphere"],
+        correctAnswer: "Troposphere",
+      },
+      {
+        question: "Which is the most abundant element in the universe?",
+        answers: ["Oxygen", "Carbon", "Hydrogen", "Helium"],
+        correctAnswer: "Hydrogen",
+      },
+      {
+        question: "How many moons does the planet Mars have?",
+        answers: ["1", "2", "3", "4"],
+        correctAnswer: "2",
+      },
+      {
+        question: "What Is The Chemical Symbol For Gold?",
+        answers: ["Au", "Ag", "Pb", "Fe"],
+        correctAnswer: "Au",
+      },
+      {
+        question:
+          "What is the term for the bending of light as it passes through a medium, such as a lens?",
+        answers: ["Refraction", "Reflection", "Diffraction", "Absorption"],
+        correctAnswer: "Refraction",
+      },
+      {
+        question: "How many chambers make up the human heart?",
+        answers: ["2", "3", "4", "5"],
+        correctAnswer: "4",
+      },
+      {
+        question: "Where on the human body are the most sweat glands?",
+        answers: ["Hands", "Feet", "Armpits", "Forehead"],
+        correctAnswer: "Feet",
       },
     ],
   },
