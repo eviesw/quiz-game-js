@@ -12,8 +12,8 @@ const categories = {
       },
       {
         question: "How many continents are there?",
-        answers: ["5", "6", "7", "8"],
-        correctAnswer: "7",
+        answers: ["Five", "Six", "Seven", "Eight"],
+        correctAnswer: "Seven",
       },
       {
         question: "Which ocean is the largest by surface area?",
@@ -160,8 +160,8 @@ const categories = {
       },
       {
         question: "How many continents does the equator pass through?",
-        answers: ["2", "3", "4", "5"],
-        correctAnswer: "3",
+        answers: ["Two", "Three", "Four", "Five"],
+        correctAnswer: "Three",
       },
       {
         question: "Which country has the most volcanoes in the world?",
@@ -291,12 +291,6 @@ const categories = {
         question: "The Cuban Missile Crisis occurred during which decade?",
         answers: ["1940s", "1950s", "1960s", "1970s"],
         correctAnswer: "1960s",
-      },
-      {
-        question:
-          "Who was the first Emperor of China, known for the construction of the Great Wall?",
-        answers: ["Qin Shi Huang", "Genghis Khan", "Sun Yat-sen", "Mao Zedong"],
-        correctAnswer: "Qin Shi Huang",
       },
       {
         question: "Who sent Christopher Columbus to explore the New World?",
@@ -480,8 +474,8 @@ const categories = {
       },
       {
         question: "How many states of matter are there?",
-        answers: ["3", "4", "5", "6"],
-        correctAnswer: "4",
+        answers: ["Three", "Four", "Five", "Six"],
+        correctAnswer: "Four",
       },
       {
         question: "What is the fastest land animal in the world?",
@@ -490,8 +484,8 @@ const categories = {
       },
       {
         question: "How many teeth does an adult human have?",
-        answers: ["28", "30", "32", "36"],
-        correctAnswer: "32",
+        answers: ["Twenty-eight", "Thirty", "Thirty-two", "Thirty-six"],
+        correctAnswer: "Thirty-two",
       },
     ],
     medium: [
@@ -595,8 +589,8 @@ const categories = {
       },
       {
         question: "How many moons does the planet Mars have?",
-        answers: ["1", "2", "3", "4"],
-        correctAnswer: "2",
+        answers: ["One", "Two", "Three", "Four"],
+        correctAnswer: "Two",
       },
       {
         question: "What Is The Chemical Symbol For Gold?",
@@ -611,8 +605,8 @@ const categories = {
       },
       {
         question: "How many chambers make up the human heart?",
-        answers: ["2", "3", "4", "5"],
-        correctAnswer: "4",
+        answers: ["Two", "Three", "Four", "Five"],
+        correctAnswer: "Four",
       },
       {
         question: "Where on the human body are the most sweat glands?",
