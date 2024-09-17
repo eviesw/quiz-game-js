@@ -637,7 +637,6 @@ const categories = {
 // Function to display the welcome message
 function displayWelcomeMessage() {
   console.log(chalk.bold.magenta("\nWelcome to the Quiz Game!")); // Display welcome message in magenta and bold
-  console.log(chalk.bold.magenta("*************************"));
   console.log(
     "Test your knowledge across various categories and difficulty levels. Try to get as many correct answers as you can!"
   );
@@ -681,37 +680,25 @@ function promptForCategory() {
 
 // Function to prompt the user to choose a difficulty level for the selected category
 function promptForDifficulty(category) {
-  console.log(chalk.bold.green("Available difficulty levels:")); // Display available difficulties in green and bold
-  console.log(chalk.green("1. Easy"));
-  console.log(chalk.green("2. Medium"));
-  console.log(chalk.green("3. Hard"));
+  console.log(chalk.bold.green("Difficulty level:") + " Easy, Medium, Hard"); // Display difficulty levels in green and bold
   console.log(" "); // Blank line for readability
 
-  // Prompt user to select a difficulty level by entering a number
-  let difficultyNumber = prompt(
-    "Please choose a difficulty level (1-3): "
-  ).trim();
+  // Prompt user to select a difficulty level
+  let difficulty = prompt("Please choose a difficulty level: ")
+    .trim()
+    .toLowerCase();
   console.log(" "); // Blank line for readability
-
-  // Mapping user input (1, 2, 3) to difficulty levels
-  const difficultyMap = {
-    1: "easy",
-    2: "medium",
-    3: "hard",
-  };
 
   // Validate user input; loop until a valid input is received
-  while (!["1", "2", "3"].includes(difficultyNumber)) {
-    console.log(
-      chalk.red("Invalid choice. Please enter a number between 1 and 3.") // Display error message in red
-    );
-    difficultyNumber = prompt(
-      "Please choose a difficulty level (1-3): "
-    ).trim(); // Prompt again
+  while (!categories[category][difficulty]) {
+    console.log(chalk.red("Invalid input. Please choose again.")); // Display error message in red
+    difficulty = prompt("Please choose a difficulty level: ")
+      .trim()
+      .toLowerCase(); // Prompt again
     console.log(" "); // Blank line for readability
   }
 
-  return difficultyMap[difficultyNumber]; // Return the difficulty corresponding to the user input
+  return difficulty; // Return the chosen difficulty level
 }
 
 // --------------------------------------------------------------
